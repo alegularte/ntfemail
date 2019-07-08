@@ -1,0 +1,27 @@
+{
+    "name": "alegularte/ntfemail",
+    "description": "lib para gerar lib para gerar notificações via email via email",
+    "type": "library",
+    "homepage": "https://waysunset.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexandre Gularte",
+            "email": "alexandre@waysunset.com",
+            "homepage": "https://waysunset.com",
+            "role": "developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpmailer/phpmailer": "6.0.7"
+    },
+    "config": {
+        "vendor-dir": "lib_ext"
+    },
+    "autoload": {
+        "psr-4": {
+            "ntfemail\\": "_app"
+        }
+    }
+}
