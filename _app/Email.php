@@ -12,13 +12,13 @@ Class Email {
     public function __construct($smtpDebug, $host, $username, $password, $smtpSecure, $port, $SetFromEmail, $SetFromName ) {
         
         $this->mail = new PHPMailer(true);
-        //$this->mail->SMTPDebug = $smtpDebug;                                        // Enable verbose debug output
+        //$this->mail->SMTPDebug = $smtpDebug;                            // Enable verbose debug output
         $this->mail->isSMTP();                                            // Set mailer to use SMTP
         $this->mail->Host       = $host ;
         $this->mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $this->mail->Username   =  $username;                      // SMTP username
-        $this->mail->Password   = $password;                                // SMTP passwor
-        $this->mail->Port       = $port; // 587;                                    // TCP port to connect to
+        $this->mail->Username   =  $username;                             // SMTP username
+        $this->mail->Password   = $password;                              // SMTP passwor
+        $this->mail->Port       = $port; // 587;                          // TCP port to connect to
         $this->mail->SMTPSecure = $smtpSecure;  //'tls';
         $this->mail->CharSet = 'utf-8';
         $this->mail->setLanguage('br');
