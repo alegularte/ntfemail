@@ -12,7 +12,7 @@ Class Email {
     public function __construct($smtpDebug, $host, $username, $password, $smtpSecure, $port, $SetFromEmail, $SetFromName ) {
         
         $this->mail = new PHPMailer(true);
-        $this->mail->SMTPDebug = $smtpDebug;                                        // Enable verbose debug output
+        //$this->mail->SMTPDebug = $smtpDebug;                                        // Enable verbose debug output
         $this->mail->isSMTP();                                            // Set mailer to use SMTP
         $this->mail->Host       = $host ;
         $this->mail->SMTPAuth   = true;                                   // Enable SMTP authentication
